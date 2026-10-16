@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+
+Name=ByteTube
+GenericName=Video Browser
+Comment=Browse and watch online videos
+
+Categories=AudioVideo;Video;Player;
+Keywords=Video;Streaming;Player;Channels;Playlists;
+
+Icon=io.github.bytetube.ByteTube
+Exec=io.github.bytetube.ByteTube %u
+Terminal=false
+StartupNotify=true

@@ -1,0 +1,9 @@
+build/
+build-release/
+builddir/
+.flatpak-builder/
+*~
+*.o
+*.c
+*.h
+*.vapi

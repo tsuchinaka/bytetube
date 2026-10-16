@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.bytetube.ByteTube</id>
+
+  <name>ByteTube</name>
+  <summary>Browse and watch online videos</summary>
+
+  <metadata_license>CC-BY-4.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+
+  <developer id="io.github.bytetube">
+    <name>ByteTube Developers</name>
+  </developer>
+
+  <description>
+    <p>
+      ByteTube is a focused, native way to browse and watch online video. It searches
+      for videos, opens channels and playlists, and plays what you pick without
+      leaving the app for a web browser.
+    </p>
+    <p>Features:</p>
+    <ul>
+      <li>Search for videos, channels, and playlists</li>
+      <li>Watch videos with a related-videos queue beside the player</li>
+      <li>Follow channels to keep up with their latest uploads</li>
+      <li>Keep a watch history and a Watch Later queue that survive restarts</li>
+      <li>Open links straight into the app from any other application</li>
+    </ul>
+    <p>
+      ByteTube is not affiliated with, endorsed by, or sponsored by any video
+      hosting service. Videos are streamed directly from the service that hosts
+      them.
+    </p>
+  </description>
+
+  <launchable type="desktop-id">io.github.bytetube.ByteTube.desktop</launchable>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>Search for videos and open them without a browser</caption>
+      <image>https://raw.githubusercontent.com/bytetube/bytetube/main/data/screenshot-search.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Watch a video with related videos alongside it</caption>
+      <image>https://raw.githubusercontent.com/bytetube/bytetube/main/data/screenshot-watch.png</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="homepage">https://github.com/bytetube/bytetube</url>
+  <url type="bugtracker">https://github.com/bytetube/bytetube/issues</url>
+
+  <branding>
+    <color type="primary" scheme_preference="light">#f37329</color>
+    <color type="primary" scheme_preference="dark">#a04c14</color>
+  </branding>
+
+  <!--
+    ByteTube displays third-party video chosen by the user and filters nothing,
+    so the rating reflects the most extreme material the hosting service can
+    serve. The app has no social features of its own, so those attributes are
+    left at their default of "none".
+  -->
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-cartoon">moderate</content_attribute>
+    <content_attribute id="violence-fantasy">moderate</content_attribute>
+    <content_attribute id="violence-realistic">moderate</content_attribute>
+    <content_attribute id="violence-bloodshed">moderate</content_attribute>
+    <content_attribute id="drugs-alcohol">moderate</content_attribute>
+    <content_attribute id="drugs-narcotics">moderate</content_attribute>
+    <content_attribute id="drugs-tobacco">moderate</content_attribute>
+    <content_attribute id="sex-nudity">moderate</content_attribute>
+    <content_attribute id="sex-themes">moderate</content_attribute>
+    <content_attribute id="language-profanity">moderate</content_attribute>
+    <content_attribute id="language-humor">moderate</content_attribute>
+    <content_attribute id="language-discrimination">moderate</content_attribute>
+  </content_rating>
+
+  <releases>
+    <release version="1.0.0" date="2026-10-15">
+      <description>
+        <p>Initial release</p>
+      </description>
+    </release>
+  </releases>
+</component>

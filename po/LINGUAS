@@ -1,0 +1,3 @@
+# Languages ByteTube is translated into. Add the two letter code of each
+# language here and run `ninja io.github.bytetube.ByteTube-update-po`.
+#

@@ -1,0 +1,34 @@
+# ByteTube Flatpak manifest
+#
+# Build with:
+#   flatpak-builder build io.github.bytetube.ByteTube.yml --user --install --force-clean
+
+id: io.github.bytetube.ByteTube
+
+runtime: io.elementary.Platform
+runtime-version: '8'
+sdk: io.elementary.Sdk
+
+command: io.github.bytetube.ByteTube
+
+# Every hole below is required by the app and is kept as small as possible.
+finish-args:
+  # Rendering: draw the window on Wayland or X11.
+  - '--share=ipc'
+  - '--socket=wayland'
+  - '--socket=fallback-x11'
+  # The app is a network client; without this it cannot do anything at all.
+  - '--share=network'
+  # Hardware accelerated rendering and video decode for the embedded player.
+  - '--device=dri'
+  # Audio for video playback.
+  - '--socket=pulseaudio'
+
+# Requires gstreamer-1.0 (core, app and the usual plugin sets) and
+# webkitgtk-6.0 for the sign-in page; both are provided by the elementary SDK.
+modules:
+  - name: bytetube
+    buildsystem: meson
+    sources:
+      - type: dir
+        path: .

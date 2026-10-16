@@ -1,0 +1,49 @@
+/*
+ * ByteTube — minimal styling.
+ *
+ * Only video thumbnails need custom CSS: no Granite class rounds the corners of
+ * a remote image, and rounding them keeps a grid of cards visually grouped.
+ * Everything else uses the system stylesheet or a Granite style class.
+ */
+
+/* Badges sit on top of thumbnails, which are photographs, so they bring
+ * their own backdrop: a dark chip for neutral facts like a duration, and red
+ * only for a live stream. Granite's badge class is the wrong tool here — it
+ * marks counts and reads as an error state. */
+.bytetube-badge {
+  border-radius: 4px;
+  padding: 1px 5px;
+  background-color: alpha(black, 0.8);
+  color: white;
+}
+
+.bytetube-badge-live {
+  background-color: @error_color;
+}
+
+/* Avatars are clipped to a circle. Granite's circular class is meant for
+ * widgets that paint their own background, so a remote image needs its own
+ * rule. */
+.bytetube-avatar {
+  border-radius: 50%;
+  background-color: alpha(@text_color, 0.08);
+}
+
+.bytetube-thumbnail {
+  border-radius: 8px;
+  background-color: alpha(@text_color, 0.08);
+}
+
+/* The player is letterboxed inside the window, so it needs its own dark
+ * backdrop rather than the window colour. Rounding it keeps the video reading
+ * as a piece of content rather than as a hole in the window. */
+.bytetube-player {
+  background-color: black;
+  border-radius: 8px;
+}
+
+/* In fullscreen the player reaches every edge of the screen, so square
+   corners: rounded ones would let the window background show through. */
+.bytetube-player.fullscreen {
+  border-radius: 0;
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/io/github/bytetube/ByteTube/" id="io.github.bytetube.ByteTube">
+    <key name="window-width" type="i">
+      <default>1100</default>
+      <summary>Window Width</summary>
+      <description>Width of the main window in pixels</description>
+    </key>
+    <key name="window-height" type="i">
+      <default>720</default>
+      <summary>Window Height</summary>
+      <description>Height of the main window in pixels</description>
+    </key>
+    <key name="window-maximized" type="b">
+      <default>false</default>
+      <summary>Window Maximized</summary>
+      <description>Whether the main window is maximized</description>
+    </key>
+    <key name="sidebar-width" type="i">
+      <default>220</default>
+      <summary>Sidebar Width</summary>
+      <description>Width of the navigation sidebar in pixels</description>
+    </key>
+    <key name="sidebar-visible" type="b">
+      <default>true</default>
+      <summary>Sidebar Visible</summary>
+      <description>Whether the navigation sidebar is shown</description>
+    </key>
+    <key name="last-view" type="s">
+      <default>'discover'</default>
+      <summary>Last View</summary>
+      <description>Name of the view that was open when the window was closed</description>
+    </key>
+    <key name="autoplay" type="b">
+      <default>true</default>
+      <summary>Autoplay</summary>
+      <description>Whether videos start playing as soon as they are opened</description>
+    </key>
+    <key name="debug-logging" type="b">
+      <default>false</default>
+      <summary>Debug Logging</summary>
+      <description>Whether the player writes what it is doing to the log</description>
+    </key>
+    <key name="save-watch-history" type="b">
+      <default>true</default>
+      <summary>Save Watch History</summary>
+      <description>Whether opened videos are remembered</description>
+    </key>
+  </schema>
+</schemalist>
