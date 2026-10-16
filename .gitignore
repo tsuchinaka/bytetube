@@ -10,6 +10,8 @@ builddir/
 
 # AI assistant / agent tooling — never part of the source
 AGENTS.md
+AGENTS
+HANDOFF*
 CLAUDE.md
 .claude/
 .opencode/
