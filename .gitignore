@@ -7,3 +7,18 @@ builddir/
 *.c
 *.h
 *.vapi
+
+# AI assistant / agent tooling — never part of the source
+AGENTS.md
+CLAUDE.md
+.claude/
+.opencode/
+.opencode.json
+.cursor/
+.codex/
+.aider/
+.aider.conf.yml
+.windsurf/
+.continue/
+.mcp.json
+mcp.json
